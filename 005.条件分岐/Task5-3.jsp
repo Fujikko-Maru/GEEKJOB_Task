@@ -1,21 +1,27 @@
 <%-- 
     Document   : Task5-3
-    Created on : 2017/07/16, 22:44:43
+    Created on : 2017/07/17, 22:54:24
     Author     : Tomoharu Fujii
 --%>
 
-<%@ page import = "java.util.ArrayList" %>
-
 <%
-    String[] data = {"10", "100", "soeda", "hayashi", "-20", "118","END"};
-    out.println("data[0]は" + data[0]);
-    out.println("data[1]は" + data[1]);
-    out.println("data[2]は" + data[2]);
-    out.println("data[3]は" + data[3]);
-    out.println("data[4]は" + data[4]);
-    out.println("data[5]は" + data[5]);
-    out.println("data[6]は" + data[6]);  
+    char x = 'あ';
+    switch(x){
+        case 'A':
+            out.println("英語");
+            break;
+        
+        case 'あ':
+            out.println("日本語");
+            break;
+        
+        default:
+            out.println(" ");
+            break;
+    }
+
 %>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
